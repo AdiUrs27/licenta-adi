@@ -8,7 +8,7 @@ submit.addEventListener("click", (e) => {
   e.preventDefault();
   firebase
     .auth()
-    .signInWithEmailAndPassword(email.value, psw.value)
+    .createUserWithEmailAndPassword(email.value, psw.value)
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;

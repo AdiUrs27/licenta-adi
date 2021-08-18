@@ -9,31 +9,10 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
-
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyCGOuGiJLQOPX0nryXbiW5gNV1GWX3JC-0",
-      authDomain: "forms-licenta.firebaseapp.com",
-      projectId: "forms-licenta",
-      storageBucket: "forms-licenta.appspot.com",
-      messagingSenderId: "791632948608",
-      appId: "1:791632948608:web:896bf3cb40808bf156a565",
-      measurementId: "G-87XFDDGM3X"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 </head>
 
 <body>
-
   <div class="body" id="body">
     <div class="loginContainer" id="loginContainer">
       <h2 class="title">Login</h2>
@@ -46,12 +25,9 @@
         <input class="submit" id="submit" type="submit">
       </form>
     </div>
-
   </div>
-
   </div>
-
 </body>
-<script src="./js/index.js"></script>
+<script src="./js/index.js" type="module"></script>
 
 </html>
