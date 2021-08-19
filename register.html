@@ -6,27 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>register</title>
-  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/register.css" />
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 </head>
 
 <body>
-  
-  <div class="loginContainer" id="loginContainer">
-    <h2 class="title">Login</h2>
-    <form class="form" id="form">
-      <label for="userName" class="label" id="labelEmail"></label>
-      <input type="email" id="userName">
-      <label for="psw" class="label" id="labelPsw"></label>
-      <input type="password" id="psw">
-      <a href="">Am uitat parola</a>
-      <input class="submit" id="submit" type="submit">
-    </form>
+
+  <div class="registerContainer" id="loginContainer">
+    <div class="registerForm">
+      <div class="title">Register</div>
+      <form class="form" id="form">
+        <input class='form-register-field' type="nameLF" id="lfName" placeholder="Full Name">
+        <input class='form-register-field' type="email" id="userName" placeholder="Email">
+        <input class='form-register-field' type="password" id="psw" placeholder="Password">
+        <input class='form-register-field' type="password" id="repPsw" placeholder="Confirm password">
+        <!--<input class='form-register-radio' type="radio" id="html" name="type" value="worker">
+          <label for="html">Angajat</label>
+          <input class='form-register-radio' type="radio" id="css" name="type" value="citizen">
+          <label for="css">Cetatean</label> -->
+        <div class="buttons">
+          <input id="submit" type="submit">
+          <input type="button" value="Login">
+        </div>
+      </form>
+    </div>
   </div>
-  
-</div>
+
+  </div>
 
 </body>
 <script src="./js/register.js" type="module"></script>
